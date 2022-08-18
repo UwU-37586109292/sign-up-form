@@ -24,18 +24,20 @@ body {
 }
 
 div.image {
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font: 10em "odin", sans-serif;
+    font: 8em "odin", sans-serif;
 
     margin-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 img {
-    width: 150px;
+    width: 25%;
+    max-width: 125px;
 }
 
 .footer {
