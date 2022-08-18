@@ -1,6 +1,10 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: 'odin';
+    src: url('./assets/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 body {
     margin: 0px;
@@ -14,13 +18,17 @@ body {
     width: 35%;
     background: #000 url(./assets/photo.avif);
 
+    color: white;
     display: flex;
     flex-direction: column;
 }
 
 div.image {
     display: flex;
+    align-items: center;
     justify-content: center;
+
+    font: 10em "odin", sans-serif;
 
     margin-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -31,6 +39,5 @@ img {
 }
 
 .footer {
-    color: white;
     margin-top: auto;
 }
