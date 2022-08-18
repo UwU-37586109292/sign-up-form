@@ -1,3 +1,16 @@
 h1 {
     color: red;
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    width: 35%;
+    background: #000 url(./assets/photo.avif);
+}
