@@ -23,21 +23,20 @@ body {
     flex-direction: column;
 }
 
-div.image {
-    padding: 20px;
+.image {
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font: 8em "odin", sans-serif;
+    font: clamp(1rem, 10vw, 10rem) "odin", sans-serif;
 
     margin-top: 30%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 img {
-    width: 25%;
-    max-width: 125px;
+    width: clamp(50px, 25%, 125px);
 }
 
 .footer {
