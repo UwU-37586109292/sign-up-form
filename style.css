@@ -45,3 +45,8 @@ img {
     padding: 10px;
     justify-content: center;
 }
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
