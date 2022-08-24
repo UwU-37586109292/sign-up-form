@@ -13,10 +13,11 @@ body {
     width: 100vw;
     height: 100vh;
 
-    font: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
     --background-main: lightgray;
     --error-clr: rgb(192, 20, 33);
+
 }
 
 .flex {
@@ -34,7 +35,7 @@ legend {
 }
 
 .left {
-    width: 35%;
+    width: clamp(200px, 35%, 700px);
     background: #000 url(./assets/photo.avif);
 
     color: white;
@@ -44,7 +45,6 @@ legend {
 
 label {
     margin-top: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: bold;
     color: darkolivegreen;
@@ -74,6 +74,7 @@ img {
 }
 
 .right {
+    width: clamp(600px, 65%, 1800px);
     display: flex;
     flex-direction: column;
     background-color: var(--background-main);
