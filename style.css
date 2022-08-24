@@ -45,9 +45,15 @@ legend {
 
 label {
     margin-top: 15px;
+    margin-bottom: 3px;
     font-size: small;
     font-weight: bold;
-    color: darkolivegreen;
+    color: darkslategrey;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 .image {
@@ -103,6 +109,8 @@ button {
 
 input {
     border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 3px 10px;
 }
 
 input:focus {
