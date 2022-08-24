@@ -13,8 +13,24 @@ body {
     width: 100vw;
     height: 100vh;
 
+    font: sans-serif;
+
     --background-main: lightgray;
     --error-clr: rgb(192, 20, 33);
+}
+
+.flex {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+    margin: 0px 30px 15px 0px;
+}
+
+legend {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .left {
@@ -24,6 +40,14 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: darkolivegreen;
 }
 
 .image {
@@ -74,7 +98,7 @@ button {
 }
 
 input {
-    border: #E5E7EB;
+    border: 1px solid #E5E7EB;
 }
 
 input:focus {
