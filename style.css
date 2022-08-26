@@ -109,7 +109,7 @@ button {
 input {
     border: 1px solid #E5E7EB;
     border-radius: 3px;
-    padding: 3px 10px;
+    padding: 6px 10px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -134,7 +134,8 @@ a {
     text-decoration: none;
 }
 
-input:invalid:not(:placeholder-shown) {
+input:invalid:not(:placeholder-shown),
+.error {
     border: 2px solid var(--error-clr);
 }
 
@@ -142,5 +143,5 @@ input:valid:not(:placeholder-shown) {
     background: url(assets/check.svg);
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center right 5px;
 }
