@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-
 body {
     margin: 0px;
     padding: 0px;
@@ -26,11 +25,6 @@ body {
 .vertical {
     flex-direction: column;
     margin: 0px 30px 15px 0px;
-}
-
-legend {
-    font-size: larger;
-    font-weight: bolder;
 }
 
 .left {
@@ -85,6 +79,11 @@ img {
     background-color: var(--background-main);
 }
 
+legend {
+    font-size: larger;
+    font-weight: bolder;
+}
+
 .right>* {
     padding: 25px;
 }
@@ -128,10 +127,14 @@ input:focus {
     box-shadow: 3px 3px 10px grey;
 }
 
-a {
+.right a {
     color: #596D48;
     font-weight: bolder;
     text-decoration: none;
+}
+
+.left a {
+    color: white;
 }
 
 input:invalid:not(:placeholder-shown),
