@@ -36,18 +36,6 @@ body {
     flex-direction: column;
 }
 
-label {
-    margin-top: 15px;
-    margin-bottom: 3px;
-    font-size: small;
-    font-weight: bold;
-    color: darkslategrey;
-}
-
-legend {
-    font-size: x-large;
-    font-weight: bolder;
-}
 
 .image {
     padding: 30px;
@@ -72,16 +60,15 @@ img {
     justify-content: center;
 }
 
+.left a {
+    color: white;
+}
+
 .right {
     width: clamp(600px, 65%, 1800px);
     display: flex;
     flex-direction: column;
     background-color: var(--background-main);
-}
-
-legend {
-    font-size: larger;
-    font-weight: bolder;
 }
 
 .right>* {
@@ -91,6 +78,19 @@ legend {
 .signup-form {
     background-color: white;
     box-shadow: 3px 3px 5px grey;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: small;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 button {
@@ -127,16 +127,6 @@ input:focus {
     box-shadow: 3px 3px 10px grey;
 }
 
-.right a {
-    color: #596D48;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-.left a {
-    color: white;
-}
-
 input:invalid:not(:placeholder-shown),
 .error {
     border: 2px solid var(--error-clr);
@@ -153,4 +143,10 @@ input:valid:not(:placeholder-shown) {
     color: var(--error-clr);
     font-size: smaller;
     margin-top: 3px;
+}
+
+.right a {
+    color: #596D48;
+    font-weight: bolder;
+    text-decoration: none;
 }
