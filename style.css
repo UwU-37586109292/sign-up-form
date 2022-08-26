@@ -17,7 +17,6 @@ body {
 
     --background-main: lightgray;
     --error-clr: rgb(192, 20, 33);
-
 }
 
 .flex {
@@ -135,6 +134,10 @@ a {
     text-decoration: none;
 }
 
-input:invalid {
-    border: 1px solid var(--error-clr);
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid var(--error-clr);
+}
+
+input:valid:not(:placeholder-shown) {
+    border: 2px solid green;
 }
