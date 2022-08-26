@@ -57,7 +57,9 @@
                     <div class="flex">
                         <div class="flex vertical">
                             <label for="pwd">PASSWORD</label>
-                            <input class="error" type="password" name="pwd" id="pwd" placeholder=" ">
+                            <input class="error" type="password" name="pwd" id="pwd" placeholder=" "
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
                             <span class="errorPwd" id="errorPwd">Passwords do not match
                             </span>
                         </div>
