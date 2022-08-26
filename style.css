@@ -134,3 +134,7 @@ a {
     font-weight: bolder;
     text-decoration: none;
 }
+
+input:invalid {
+    border: 1px solid var(--error-clr);
+}
