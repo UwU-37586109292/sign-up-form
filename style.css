@@ -139,5 +139,8 @@ input:invalid:not(:placeholder-shown) {
 }
 
 input:valid:not(:placeholder-shown) {
-    border: 2px solid green;
+    background: url(assets/check.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
