@@ -25,7 +25,7 @@
             <h2>You <em>know</em> you want to.</h2>
         </div>
         <div class="signup-form">
-            <form>
+            <form action="https://www.google.com/search?" method="get" id="signup">
                 <div class="flex vertical">
                     <legend>
                         Let's do this!
@@ -47,7 +47,8 @@
                         </div>
                         <div class="flex vertical">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="number" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" pattern="^\+(?:[0-9] ?){6,25}[0-9]$"
+                                placeholder="+XX XXXXXXXXX">
                         </div>
                     </div>
                     <div class="flex">
@@ -64,8 +65,8 @@
             </form>
         </div>
         <div class="cta">
-            <button type="submit">Create account</button>
-            <p>Already have an account? <a>Log in!</a></p>
+            <button type="submit" form="signup">Create account</button>
+            <p>Already have an account? <a href="/login">Log in!</a></p>
         </div>
     </div>
 

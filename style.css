@@ -113,8 +113,24 @@ input {
     padding: 3px 10px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 input:focus {
     outline: none !important;
     border: 1px solid navy;
     box-shadow: 3px 3px 10px grey;
+}
+
+a {
+    color: #596D48;
+    font-weight: bolder;
+    text-decoration: none;
 }
